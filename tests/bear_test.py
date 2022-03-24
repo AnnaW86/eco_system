@@ -37,7 +37,7 @@ class TestBear(unittest.TestCase):
         self.assertEqual(2, len(self.bear1.stomach))
     
     # Test for Method 2 in src.bear
-    def test_takes_specific_fish_from_river(self):
+    def test_takes_random_fish_from_river(self):
         self.river.add_fish(self.fish1)
         self.river.add_fish(self.fish2)
         self.river.add_fish(self.fish3)
