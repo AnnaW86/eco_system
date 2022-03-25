@@ -14,9 +14,8 @@ class Bear:
 
 # Method 2 for taking fish from the river - take a random fish and eat it.
     def take_random_fish_from_river(self, river):
-        random_fish = river.lose_fish()
-        self.stomach.append(random_fish)
-    
+        self.eat_fish(river.lose_fish())   
+         
 ### Extension methods
     def roar(self):
         return "ROOOAAAAARRRRRR!!!!!"
